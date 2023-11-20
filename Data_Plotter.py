@@ -36,7 +36,7 @@ def conditional_compare(pre,post,filter):
 
     
 
-    if (!filter): 
+    if not (filter): 
         for i in range(len(pre)):
             return_pre.append(pre[i])
             return_post.append(post[i])
