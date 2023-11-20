@@ -32,9 +32,7 @@ def conditional_compare(pre,post,filter):
 
     if len(pre) != len(post):
         print("Error, arrays are different sizes which shouldn't happen.")
-        sys.exit()
-
-    
+        exit()
 
     if not (filter): 
         for i in range(len(pre)):
@@ -42,7 +40,6 @@ def conditional_compare(pre,post,filter):
             return_post.append(post[i])
             return_diff.append(post[i]-pre[i])
 
-    #If removing
     if (filter):
         for i in range(len(pre)):
             if pre[i] >= pre_exposure_overflow_value: 
